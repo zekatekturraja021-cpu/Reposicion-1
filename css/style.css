@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 30px;
+    background: linear-gradient(90deg, #07aeea 0.000%, #2bf598 100.000%);
+}
+
+
+#listaPersonajes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  font-family: 'Nunito',sans-serif;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; 
+  border: 3px solid #521349;   
+  border-radius: 9px;         
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px); 
+}
+
+
+.card > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+  flex-shrink: 0;    
+}
+
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card > div h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+  color: #081b31;
+}
+
+
+.card , div p {
+  margin: 2px 0;
+  font-size: 0.85rem;
+  color: #444444;
+  line-height: 1.4;
+  font-weight: 700;
+}
